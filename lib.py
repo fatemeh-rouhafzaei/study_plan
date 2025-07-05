@@ -1,7 +1,7 @@
 grades_poor = []
 grades_medium = []
 grades_good = []
-
+# this def get a plan for study 
 def study_plan_generator(grades , target):
     for key, Value in grades.items() :
         if 0 <= Value <= 50 :
@@ -12,6 +12,8 @@ def study_plan_generator(grades , target):
             return grades_good_list
         else :
             print("error_grades_value")
+
+#the following def categorizes grades into three gruops.
     def grades_poor_list() :
         grades_poor.append(key)
         return grades_poor
@@ -21,6 +23,8 @@ def study_plan_generator(grades , target):
     def grades_good_list() :
         grades_good.append(key)
         return grades_good
+    
+#this def provides you with a program based on the specified goal.
     def target_study_plan() :
         if target == 0 :
             return konkur_target 
