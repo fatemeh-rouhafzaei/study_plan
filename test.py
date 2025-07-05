@@ -50,13 +50,13 @@
 #     for w , e in grades.items() :
 #         if e > 20 :
 #             print(w  , ":" , e)
-# f = o({'riazi': 78,
+f = o({'riazi': 78,
 
-#     'zist': 45,
+    'zist': 45,
 
-#     'phizik': 62,
+    'phizik': 62,
 
-#     'shimi': 83}) 
+    'shimi': 83}) 
 # print(f)           
 # p = [o for o in grades if o > 20 ]
 
@@ -108,3 +108,21 @@
 #          return "error"
 # o = target("konkur" , "good")()
 # print(o)
+g = grades_level({'riazi': 78,
+
+    'zist': 45,
+
+    'phizik': 62,
+
+    'shimi': 83})
+
+def grades_level (grades) :
+    grades={'riazi': 78,
+
+    'zist': 45,
+
+    'phizik': 62,
+
+    'shimi': 83}
+    grade = [level for level in grades.values() if 0 <= level <= 50 ]
+    
