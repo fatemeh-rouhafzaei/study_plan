@@ -50,13 +50,13 @@
 #     for w , e in grades.items() :
 #         if e > 20 :
 #             print(w  , ":" , e)
-f = o({'riazi': 78,
+# f = o({'riazi': 78,
 
-    'zist': 45,
+#     'zist': 45,
 
-    'phizik': 62,
+#     'phizik': 62,
 
-    'shimi': 83}) 
+#     'shimi': 83}) 
 # print(f)           
 # p = [o for o in grades if o > 20 ]
 
@@ -108,21 +108,93 @@ f = o({'riazi': 78,
 #          return "error"
 # o = target("konkur" , "good")()
 # print(o)
-g = grades_level({'riazi': 78,
 
-    'zist': 45,
 
-    'phizik': 62,
+# def grades (**h) :
+#     print(f'bddjhjhjh{h}')
+# p ={
+#     'riazi': 20,
 
-    'shimi': 83})
+#     'zist': 45,
 
-def grades_level (grades) :
-    grades={'riazi': 78,
+#     'phizik': 62,
 
-    'zist': 45,
+#     'shimi': 83
+# }
+# pp=[]
+# for key , Value in p.items() :
+#     if 0 <= Value <= 50 :
+#         pp.append(key)
+# print(pp)        
+# for key , Value in p.items() :
+#     if 50 < Value <= 75 :
+#         print([Value]) 
 
-    'phizik': 62,
+# for key , Value in p.items() :
+#     if 75 < Value <= 100 :
+#         print([Value])
+# grades_poor = []
+# grades_medium = []
+# grades_good = []
+# def study_plan_generator(grades , target):
+#     for key, Value in grades.items() :
+#         if 0 <= Value <= 50 :
+#             return grades_poor_list 
+#         elif 50 < Value <= 75 :
+#             return grades_medium_list 
+#         elif 75 < Value <= 100 :
+#             return grades_good_list
+#         else :
+#             print("error_grades_value")
+#     def grades_poor_list() :
+#         grades_poor.append(key)
+#         return grades_poor
+#     def grades_medium_list() :
+#         grades_medium.append(key)
+#         return grades_medium
+#     def grades_good_list() :
+#         grades_good.append(key)
+#         return grades_good
+#     def target_study_plan() :
+#         if target == 0 :
+#             return konkur_target 
+#         elif target == 1 :
+#             return final_target
+#         else :
+#             print("error target")        
+#         def konkur_target() :
+#             def konkur_poor_grades() :
+#                 for lesson in grades_poor :
+#                     return f'you can use plan_konkur_C for lesson{lesson}'
+#             def konkur_medium_grades() :
+#                 for lesson in grades_medium :
+#                         return f'you can use plan_konkur_B for lesson{lesson}'       
+#             def konkur_good_grades() :
+#                 for lesson in grades_good :
+#                     return f'you can use plan_konkur_A for lesson{lesson}' 
 
-    'shimi': 83}
-    grade = [level for level in grades.values() if 0 <= level <= 50 ]
-    
+#         def final_target() :
+#             def final_poor_grades() :
+#                 for lesson in grades_poor :
+#                     return f'you can use plan_final_C for lesson{lesson}'
+#             def final_medium_grades() :
+#                 for lesson in grades_medium :
+#                     return f'you can use plan_final_B for lesson{lesson}'       
+#             def final_good_grades() :
+#                 for lesson in grades_good :
+#                     return f'you can use plan_final_A for lesson{lesson}' 
+# kkk ={
+#     'riazi': 20,
+
+#     'zist': 45,
+
+#     'phizik': 62,
+
+#     'shimi': 83
+# }
+               
+# pokm=study_plan_generator(kkk,0)()
+# print(pokm) 
+
+
+
