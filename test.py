@@ -183,18 +183,20 @@
 #             def final_good_grades() :
 #                 for lesson in grades_good :
 #                     return f'you can use plan_final_A for lesson{lesson}' 
-# kkk ={
-#     'riazi': 20,
+kkk ={
+    'riazi': 20,
 
-#     'zist': 45,
+    'zist': 45,
 
-#     'phizik': 62,
+    'phizik': 62,
 
-#     'shimi': 83
-# }
+    'shimi': 83
+}
                
-# pokm=study_plan_generator(kkk,0)()
-# print(pokm) 
-
+# # pokm=study_plan_generator(kkk,0)()
+# # print(pokm) 
+# for w,e in kkk.items() :
+#     if e > 30 :
+#         print(kkk.items)
 
 

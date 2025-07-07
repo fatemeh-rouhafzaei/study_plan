@@ -3,28 +3,18 @@ grades_medium = []
 grades_good = []
 # this def get a plan for study 
 def study_plan_generator(grades , target):
-    for key, Value in grades.items() :
-        if 0 <= Value <= 50 :
-            return grades_poor_list 
-        elif 50 < Value <= 75 :
-            return grades_medium_list 
-        elif 75 < Value <= 100 :
-            return grades_good_list
-        else :
-            print("error_grades_value")
-
-#the following def categorizes grades into three gruops.
+    #the following def categorizes grades into three gruops.
     def grades_poor_list() :
         grades_poor.append(key)
-        return grades_poor
+        # return grades_poor
     def grades_medium_list() :
         grades_medium.append(key)
-        return grades_medium
+        # return grades_medium
     def grades_good_list() :
         grades_good.append(key)
         return grades_good
-    
-#this def provides you with a program based on the specified goal.
+
+    #this def provides you with a program based on the specified goal.
     def target_study_plan() :
         if target == 0 :
             return konkur_target 
@@ -54,5 +44,26 @@ def study_plan_generator(grades , target):
                 for lesson in grades_good :
                     return f'you can use plan_final_A for lesson{lesson}' 
 
-         
-         
+    for key, Value in grades.items() :
+        if 0 <= Value <= 50 :
+            return grades_poor_list 
+        elif 50 < Value <= 75 :
+            return grades_medium_list 
+        elif 75 < Value <= 100 :
+            return grades_good_list
+        else :
+            print("error_grades_value")
+
+
+
+kkk ={
+    'riazi': 20,
+
+    'zist': 45,
+
+    'phizik': 62,
+
+    'shimi': 83
+}
+pp = study_plan_generator(kkk , 0)()
+print(pp)
