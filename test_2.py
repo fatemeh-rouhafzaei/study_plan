@@ -1,6 +1,15 @@
 def study_plan(grades , target) :
     def grades_level(score):
-        pass
+        if 0 <= Score <= 50 :
+            return "poor" 
+        elif 50 < Score <= 75 :
+            return "medium"
+        elif 75 < Score <= 100 :
+            return "good"
+        else :
+            print("error_grades_value")
+
+
     def suggst_plan (level) :
         def final_exam () :
             pass
